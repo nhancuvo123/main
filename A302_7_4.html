@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="../bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="../bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./A302_7_4.css">
+    <title>A302_7_4</title>
+</head>
+<style>
+    .row{
+        margin-top: 15px;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <h4>Personal Info</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="first-name"><strong>First name</strong></label>
+                                    <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                                    <small id="first-name-error" class="form-text" style="color: red;"></small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="last-name"><strong>Last name</strong></label>
+                                    <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+                                    <small id="last-name-error" class="form-text" style="color: red;"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="email"><strong>Email</strong></label>
+                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                        <small id="email-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="phone"><strong>Phone</strong></label>
+                                        <input type="text" class="form-control" id="phone" placeholder="Phone">
+                                        <small id="phone-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="address"><strong>Address</strong></label>
+                                        <input type="text" class="form-control" id="address" placeholder="1234 Main st">
+                                        <small id="address-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="city"><strong>City</strong></label>
+                                        <input type="text" class="form-control" id="city" placeholder="New York">
+                                        <small id="city-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="state"><strong>State</strong></label>
+                                        <select class="form-control" id="state">
+                                            <option value="default">Chooes...</option>
+                                            <option value="Faca04">Faca04</option>
+                                            <option value="Faca03">Faca03</option>
+                                            <option value="Faca02">Faca02</option>
+                                            <option value="Faca01">Faca01</option>
+                                        </select>
+                                        <small id="state-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="zip"><strong>Zip Code</strong></label>
+                                        <input type="text" class="form-control" id="zip">
+                                        <small id="zip-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <h4>Payment Info</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="name-card"><strong>Name on Card</strong></label>
+                                        <input type="text" class="form-control" id="name-card"
+                                            placeholder="John More Doe">
+                                        <small id="name-card-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="credit-card"><strong>Credit card Number</strong></label>
+                                        <input type="text" class="form-control" id="credit-card"
+                                            placeholder="1111-2222-3333-4444">
+                                        <small id="credit-card-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="exp-month"><strong>Exp Month</strong></label>
+                                        <input type="text" class="form-control" id="exp-month" placeholder="07">
+                                        <small id="exp-month-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="exp-year"><strong>Exp Year</strong></label>
+                                        <input type="text" class="form-control" id="exp-year" placeholder="2020">
+                                        <small id="exp-year-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="cvv"><strong>CVV</strong></label>
+                                        <input type="text" class="form-control" id="cvv" placeholder="325">
+                                        <small id="cvv-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <label for="creadit-card"><strong>Accepted Card</strong></label>
+                                        <small id="creadit-card-error" class="form-text" style="color: red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 0;">
+                            <div class="col-12">
+                                <span class="d-inline" style="color:darkslateblue">
+                                    <i class="fa fa-cc-visa fa-3x " ></i>
+                                </span>
+                                <span class="d-inline ">
+                                    <i class="fa fa-cc-mastercard fa-3x"  style="color:red"></i>
+                                </span>
+                                <span class="d-inline ">
+                                    <i class="fa fa-cc-discover fa-3x " style="color:orange"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="check-me-out">
+                            <label class="form-check-label" for="check-me-out">
+                                Check me out
+                            </label>
+                            <small id="check-me-out-error" class="form-text" style="color: red;"></small>
+                        </div>
+                    </div>
+                </div>
+                <button style="margin-top: 12px;" type="submit" class="btn btn-primary" id='add-infor'>Add Information</button>
+            </form>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Manage <b>Employees</b></h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#" class="btn btn-danger" id='remove-employee'><i class="fa fa-minus-circle"></i>
+                            <span>Delete</span></a>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover" id="table-employee">
+                <thead>
+                    <tr>
+                        <th>
+                            <span class="custom-checkbox">
+                                <input type="checkbox" id="selectAll">
+                                <label for="selectAll"></label>
+                            </span>
+                        </th>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Zip code</th>
+                        <th>Name card</th>
+                        <th>Credit number</th>
+                        <th>Month</th>
+                        <th>Year</th>
+                        <th>CVV</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="custom-checkbox">
+                                <input type="checkbox" id="checkbox1" name="" value="1">
+                                <label for="checkbox1"></label>
+                            </span>
+                        </td>
+                        <td>Dany</td>
+                        <td>Lo</td>
+                        <td>soengsouy@mail.com</td>
+                        <td>0966686371</td>
+                        <td>89 Chiaroscuro Rd</td>
+                        <td>New York</td>
+                        <td>Faca04</td>
+                        <td>23434</td>
+                        <td>vietcomebank</td>
+                        <td>2321-4493-6959-5555</td>
+                        <td>02</td>
+                        <td>2021</td>
+                        <td>333</td>
+                        <td>
+                            <a href="#" class="edit" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                            <a href="#" class="delete" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="custom-checkbox">
+                                <input type="checkbox" id="checkbox2" name="" value="1">
+                                <label for="checkbox2"></label>
+                            </span>
+                        </td>
+                        <td>Vivy</td>
+                        <td>Pay</td>
+                        <td>soengsouy@mail.com</td>
+                        <td>0966686372</td>
+                        <td>Obere Str. 57</td>
+                        <td>Washington DC</td>
+                        <td>Faca04</td>
+                        <td>34986</td>
+                        <td>TP Bank</td>
+                        <td>7456-7866-8897-6454</td>
+                        <td>08</td>
+                        <td>2022</td>
+                        <td>332</td>
+                        <td>
+                            <a href="#" class="edit" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                            <a href="#" class="delete" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="custom-checkbox">
+                                <input type="checkbox" id="checkbox2" name="" value="1">
+                                <label for="checkbox2"></label>
+                            </span>
+                        </td>
+                        <td>Design</td>
+                        <td>Web</td>
+                        <td>camobida@mail.com</td>
+                        <td>0966686373</td>
+                        <td>25, Joly</td>
+                        <td>Paris</td>
+                        <td>Faca05</td>
+                        <td>34986</td>
+                        <td>Dong A Bank</td>
+                        <td>9456-8897-8456-5474</td>
+                        <td>03</td>
+                        <td>2020</td>
+                        <td>555</td>
+                        <td>
+                            <a href="#" class="edit" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                            <a href="#" class="delete" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="custom-checkbox">
+                                <input type="checkbox" id="checkbox2" name="" value="1">
+                                <label for="checkbox2"></label>
+                            </span>
+                        </td>
+                        <td>Chan</td>
+                        <td>Toly</td>
+                        <td>khmer09@mail.com</td>
+                        <td>0966686374</td>
+                        <td>PP San Sok</td>
+                        <td>Madrid</td>
+                        <td>Faca03</td>
+                        <td>33422</td>
+                        <td>Dong A Bank</td>
+                        <td>9456-7833-8456-1235</td>
+                        <td>03</td>
+                        <td>2020</td>
+                        <td>523</td>
+                        <td>
+                            <a href="#" class="edit" data-toggle="modal"><i class="fa fa-pencil"></i></a>
+                            <a href="#" class="delete" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="./A302_7_4.js">
+
+    </script>
+</body>
+
+</html>
